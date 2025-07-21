@@ -167,13 +167,14 @@ const ProductsManagement: React.FC<ProductsManagementProps> = ({ onStatsUpdate }
                         <div className="flex-shrink-0 h-12 w-12">
                           <img
                             className="h-12 w-12 rounded-lg object-cover"
-                            src={product.imagen || 'https://via.placeholder.com/48'}
+                            src={`${import.meta.env.VITE_API_BASE_URL}static/imagenes/${product.imagen}`  || 'https://via.placeholder.com/48'}
                             alt={product.nombre}
                           />
                         </div>
                         <div className="ml-4">
                           <div className="text-sm font-medium text-gray-900 line-clamp-1">
                             {product.nombre}
+                            {product.imagen}
                           </div>
                           <div className="text-sm text-gray-500 line-clamp-1">
                             {product.descripcion}
