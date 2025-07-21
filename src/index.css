@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-fadein {
+    animation: fadein 1s ease-in;
+  }
+  .animate-fadein-up {
+    animation: fadein-up 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+  .animate-bounce-slow {
+    animation: bounce 2.5s infinite;
+  }
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadein-up {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
