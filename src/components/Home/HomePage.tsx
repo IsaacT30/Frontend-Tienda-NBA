@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
               Por eso creé esta tienda, dedicada a todos los que, como yo, viven el deporte con el corazón. Aquí comparto lo que más me gusta: camisetas, zapatillas, accesorios y todo lo que representa la magia de la NBA.
             </p>
             <p className="mt-4">
-              Más que un negocio, esto es una forma de expresar lo que me inspira desde niño. ¡Bienvenido a esta comunidad de fans y gracias por ser parte de este sueño!
+              Más que un negocio, esto es una forma de expresar lo que me inspira desde niño. ¡Bienvenido a esta comunidad de fans Ecuador y gracias por ser parte de este sueño!
             </p>
           </div>
         </section>
