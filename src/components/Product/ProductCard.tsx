@@ -23,9 +23,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails }) => 
     }).format(typeof price === 'string' ? parseFloat(price) : price);
   };
 
-  // NBA product images - usando imágenes reales de productos NBA
+  // Mostrar imagen subida por el admin o placeholder si no hay imagen
   const getProductImage = (product: Product) => {
-    if (product.imagen && product.imagen !== '') return product.imagen;
+    if (product.imagen && product.imagen !== '') {
+      return `${import.meta.env.VITE_API_BASE_URL}static/imagenes/${product.imagen}`;
+    }
     return 'https://fanatics.frgimages.com/nba/mens-nba-nike-black-2022/23-swingman-jersey-icon-edition_ss4_p-13237+pv-1+u-ixqy5h8ywjfqhqjgqzpb+v-c4e2c8e8e8e8e8e8e8e8.jpg?_hv=2&w=600';
   };
   return (
